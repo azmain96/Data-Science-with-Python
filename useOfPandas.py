@@ -1,6 +1,6 @@
 import pandas as pd
+import numpy as np
 
-pd.Series
 print('=== Series() shows indices and datatype of a object === ')
 animal = ['Tiger', 'Bear', 'Moose']
 print(pd.Series(animal))
@@ -12,7 +12,7 @@ print(pd.Series(animals))
 numbers = [1, 2, 3, 4, 5, None]
 print(pd.Series(numbers))
 
-import numpy as np
+
 
 c = np.nan is None
 print(c)
@@ -51,7 +51,7 @@ print(s[3])
 print(s[0])
 print(s.iloc[0])
 print(s['Sumo'])
-# print(s['Japan']) error
+# print(s['Japan']) error because this is not an index
 print('=========================')
 sp = {
     99: 'Bhutan',
